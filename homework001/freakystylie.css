@@ -1,0 +1,40 @@
+body {
+  font-size: 12pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: yellow;
+  line-height: 14pt;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  padding-top: 5pt;
+}
+
+h1 {
+  line-height: 20pt;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  padding-left: 350pt;
+}
+
+p.subheader {
+  color: #593d87;
+  font-size: 22pt;
+  text-align: center;
+}
+
+footer {
+  font-size: 9pt;
+  text-align: center;
+  padding-top: 25pt;
+}
