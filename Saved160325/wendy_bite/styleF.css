@@ -1,0 +1,19 @@
+* {
+  outline-color: red; !important
+}
+id {
+  font-family: sans-serif;
+  display: inline;
+}
+span.one {
+  font-size: 15pt;
+}
+span.two {
+  font-size: 12pt;
+}
+span.three {
+  font-size: 10pt;
+}
+Section {
+  font-family: serif;
+}

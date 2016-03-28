@@ -1,0 +1,24 @@
+# FIx the capItalIzatIon in the following poem and change all
+# occurrences of "green" to "green"
+# Hint: Use the EdIt menu to convert the text to all lower-case,
+#       then use multI-select to
+#          convert "I" to "I" where approprIate and all "Sam" to "Sam"  ` Command+Ctrl+G (Mac OS X)`
+#          and all "green" to "green"
+I am Sam. I am Sam. Sam I am.
+that Sam-I-am! that Sam-I-am! I do not like that Sam-I-am!
+do would you like green eggs and ham?
+I do not like them, Sam-I-am.
+I do not like green eggs and ham.
+would you like them here or there?
+I would not like them here or there.
+I would not like them anywhere.
+I do not like green eggs and ham.
+I do not like them, Sam-I-am.
+would you like them in a house?
+would you like then with a mouse?
+I do not like them in a house.
+I do not like them with a mouse.
+I do not like them here or there.
+I do not like them anywhere.
+I do not like green eggs and ham.
+I do not like them, Sam-I-am.
