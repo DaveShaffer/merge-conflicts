@@ -1,11 +1,19 @@
-i = 0
-rslt = ""
-while i <= 100
-  # Your code goes in here.
-  rslt = i.to_s
-  if i % 3 == 0
-    rslt = "fizz"
+def fizbuz (mx_cnt)
+  i = 1 #starting poing
+  rslt = "" #init
+  while i <= mx_cnt #count up
+    rslt = i.to_s
+    if i % 3 == 0
+      rslt = "fizz"
+      if i % 5 == 0
+        rslt += "buzz"
+      end
+    elsif i % 5 == 0
+      rslt = "buzz"
+    end
+    puts rslt
+    i = i + 1
   end
-  puts rslt
-  i = i + 1
 end
+
+fizbuz (30)
