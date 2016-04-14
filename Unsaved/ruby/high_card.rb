@@ -4,6 +4,7 @@ deck = []
 players = []
 dealt_cards = []
 high_card = 0
+winner = ""
 #puts "#{players.length} players so far.  Enter a player name or type 'play'."
 input = ""
 #input = gets.chomp
@@ -30,9 +31,12 @@ players.each do |player|
 end
 puts dealt_cards
 
-#dealt_cards.each do |card: index|
-#  if index > high_card
-#    high_card = index
-#  end
-#end
-puts dealt_cards[0][:index]
+dealt_cards.each do |card|
+  puts card[:card][:index]
+  if card[:card][:index] > high_card
+    high_card = card[:card][:index]
+    winner = card[:player]
+  end
+end
+#puts dealt_cards[1][:card][:index]
+puts winner
