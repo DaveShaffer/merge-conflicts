@@ -20,27 +20,28 @@ def add_bottle (cellar)
   puts "Enter color"
   new_bottle[:color] = gets.chomp
   puts new_bottle
-  cellar.push (new_bottle)
+  cellar << new_bottle
 end
 def pick_bottle (cellar)
   #x = prng.rand(cellar.length)
   prng = Random.new
   #puts cellar.length
-  x = prng.rand(cellar.length)
+  #x = prng.rand(cellar.length)
   #puts x
-  cellar[x]
+  x = cellar.sample
+  #cellar[x]
 end
 def list_color (color, cellar)
   wine_list = []
   wine_cellar.each do |wine|
-    if wine[:color] == "white"
-      wine_list.push(wine)
+    if wine[:color] == color
+      wine_list << wine
       put wine_list
     end
   end
 end
 
-#add_bottle (wine_cellar)
+add_bottle (wine_cellar)
 #puts wine_cellar
-#puts pick_bottle (wine_cellar)
-puts list_color (white, wine_cellar)
+puts pick_bottle (wine_cellar)
+#puts list_color ("white", wine_cellar)
