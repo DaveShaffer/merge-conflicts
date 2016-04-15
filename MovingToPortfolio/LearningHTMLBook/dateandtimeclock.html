@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Displaying Times and Dates</title>
+</head>
+
+<body>
+    <h1>Current Date and Time</h1>
+    <script type="text/javascript">
+    now = new Date(); // Download current date and time
+    localtime = now.toString(); // Convert to string
+    utctime = now.toGMTString(); // Convert to Greenwich Mean Time string
+    document.write("<p><strong>Local time:</strong> " + localtime + "</p>"); // Print local time
+    document.write("<p><strong>UTC time:</strong> " + utctime + "</p>");// Print GMT
+    hours = now.getHours(); // Get hours from current time
+    mins = now.getMinutes(); // Get minutes
+    secs = now.getSeconds(); // Get seconds
+    document.write("<h2>"); // Change to h2 font
+    document.write(hours + ":" + mins + ":" + secs); // Print local time
+    document.write("</h2>"); // Change back to regular font
+    </script>
+</body>
+
+</html>
