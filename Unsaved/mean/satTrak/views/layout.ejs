@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shawn's Satellite DB App</title>
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css" />-->
+</head>
+<body>
+  <h1>Satellites</h1>
+
+  <div class="container">
+    <% include ./form %>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <% for(var i=0; i< sats.length; i++) {  %>
+      <ul>
+        <li><strong>NORAD Number : </strong> <%= sats[i].noradNum %></li>
+        <li><strong>Satellite Name : </strong> <%= sats[i].name %></li>
+        <li><strong>Launched By : </strong> <%= sats[i].country %></li>
+        <li><strong>Launch Date : </strong> <%= sats[i].launchDate %></li>
+        <li><strong>Purpose : </strong> <%= sats[i].purpose %></li>
+        <li><strong>Perigee Km : </strong> <%= sats[i].perigee %></li>
+        <li><strong>Apogee Km : </strong> <%= sats[i].apogee %></li>
+        <li>
+          <form method="GET" action="/sats/<%= sats[i].id %>">
+            <button type="submit" class="btn btn-xs btn-danger">Show</button>
+          </form>
+        </li>
+        <li>
+          <form method="PUT" action="/sats/<%= sats[i].id %>">
+            <button type="submit" class="btn btn-xs btn-danger">Edit</button>
+          </form>
+        </li>
+        <li>
+          <form method="POST" action="/sats/<%= sats[i].id %>?_method=DELETE">
+            <button type="submit" class="btn btn-xs btn-danger">Delete</button>
+          </form>
+        </li>
+      </ul>
+    <% } %>
+  </div>
+
+</body>
+</html>
