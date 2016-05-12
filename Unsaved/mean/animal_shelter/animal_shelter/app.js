@@ -9,7 +9,7 @@ var methodOverride = require('method-override');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var animalsRouter = require('./routes/animals');
+// var animals = require('./routes/animals');
 
 var app = express();
 var router = express.Router()
@@ -37,7 +37,7 @@ app.use(methodOverride('_method'));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/animals', animalsRouter);
+// app.use('/animals', animals);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
