@@ -63,6 +63,7 @@ router.get('/sats/:id/edit', function(req, res, next) {
   Sat.findById(req.params.id)
   .then(function(sat) {
    if (!sat) return next(makeError(res, 'no sat'));
+   // console.log(sat);
    res.render('sats/edit', {sat: sat});
   }, function(err) {
     return next(err);
