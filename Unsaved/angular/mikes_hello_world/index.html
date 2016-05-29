@@ -1,0 +1,12 @@
+<section ng-app='app' ng-controller='myCntl as ctrl'>
+  <h1>Hello World</h1>
+  <div>
+  Enter your name: <input type="text" ng-model="ctrl.name"></input>
+<button ng-click="ctrl.logTheName()">Click Me!</button>
+  </div>
+<div>Enter you age: <input type="text" ng-model="ctrl.age"></input>
+<button ng-click="ctrl.logTheAge()">click me</button>
+<button ng-click="ctrl.age = ctrl.age + 1;">celebrate a bday</button>
+</div>
+<p>Hello {{ ctrl.name }} I see you're {{ ctrl.age }} years old</p>
+</section>

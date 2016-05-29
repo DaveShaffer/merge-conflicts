@@ -1,0 +1,18 @@
+<body ng-app="petsApp">
+  <div ng-controller="petsCtrl as ctrl">
+    <h2>Those crazy pets</h2>
+    <ul>
+      <li class="pet" ng-repeat="pet in ctrl.pets | orderBy : 'owner'">
+        {{ pet.owner + " has a " + pet.species + " named " + pet.name }}
+      </li>
+    </ul>
+    <button ng-click="ctrl.removeLastPet()">Remove Last</button>
+
+    <h3 ng-repeat-start="pet in ctrl.pets">{{ pet.name }}</h3>
+    <ul ng-repeat-end>
+      <li>species: {{ pet.species }}</li>
+      <li>owner: {{ pet.owner }}</li>
+      <li>vaccinated: <input type="checkbox" ng-model="pet.vaccinated" ng-disabled="pet.vaccinated"></li>
+    </ul>
+  </div>
+</body>

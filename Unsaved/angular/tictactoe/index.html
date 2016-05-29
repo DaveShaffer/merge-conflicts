@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tic tac toe</title>
+
+
+</head>
+<body>
+<section ng-app='ticTacToeApp'
+     ng-controller='ticTacToeCntl as cntl'>
+  <h1>Tic Tac Toe</h1>
+  <article class='container well'>
+    <div ng-repeat="row in cntl.board">
+      <button class="btn-lg"
+              ng-repeat="cell in row"
+              ng-class="cell.value"
+              ng-disabled="cntl.isTaken(cell) || cntl.winner"
+              ng-click="cntl.move(cell)">
+        {{ cell.value }}
+      </button>
+    </div>
+    <p>
+      <span ng-hide="cntl.winner || cntl.cat">Current Player: {{ cntl.currentPlayer }}</span>
+      <span ng-show="cntl.winner">Winner is: {{ cntl.currentPlayer }}</span>
+      <span ng-show="cntl.cat">Cat</span>
+    </p>
+    <button class="btn btn-primary btn-large" ng-click="cntl.reset()">New Game</button>
+  </article>
+</section>
+</body>
+</html>
