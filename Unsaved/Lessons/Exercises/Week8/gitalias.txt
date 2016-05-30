@@ -1,0 +1,11 @@
+
+Mike Hopper [11:23]
+added and commented on a Plain Text snippet: Helpful Git Aliases
+[alias]
+  st = status
+  co = checkout
+  g  = log --graph --all --branches --decorate --pretty=format:'[%C(auto)%h%Creset][%C(cyan)%an %ar%Creset]%C(auto)%d%Creset %s %C(auto)%Creset'
+  l = log --all --decorate
+  ls = log --stat --all --decorate
+
+You should have a file in your home directory called .gitconfig that contains aliases. You can add the above helpful aliases to the alias section of your ~/.gitconfig file.
