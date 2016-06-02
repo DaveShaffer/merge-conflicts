@@ -9,7 +9,7 @@ var ReactDOM = require("react-dom");
 //     } // end rtn
 //   }, // end fnc getInitialState
 //
-//   raiseCounter: funtion(){
+//   raiseCounter: function(){
 //     this.setState({
 //       counter: parseInt(this.state.counter) + 1
 //     }) // end setState
